@@ -9,7 +9,88 @@ c-g vim is an vim-ide used for developing in c and golang enviroment.
 - Auxiliary develop tools, such as PlantUml, graphviz.
 
 ### Requirement:
-    [neovim](https://github.com/neovim/neovim)
-    b. 
+- [Neovim](ttps://github.com/neovim/neovim) Better Version: 0.5.0.
+- [Golang](https://golang.google.cn/dl/) Better Version: 1.13.x.
+- [Delve](https://github.com/leafji/delve)  Better Version: using my-fork delve version.
+- Python3.x
 ### How to Install?
+- Install neovim.
+- Clone this respo: git clone git@github.com:leafji/c-gvim.git ~/.vim.
+- Link init.vim in ~/.config/nvim/init.vim to ~/.vim/init.vim  
+
+    **ln -s ~/.vim/init.vim ~/.config/nvim/init.vim**
+- Enter vim do **:PlugInstall** to install all plugin 
+- Compile YouComplete for auto complete, plz reference:[YouCompleteMe](https://github.com/ycm-core/YouCompleteMe)
+
+    cd ~/.vim/plugged/YouCompleteMe
+    python3 install.py --clang-completer --clangd-completer 
+
+### Vim-Config:
+- Main vimrc File: ~/.vim/init.vim
+- Main plugin File: ~/.vim/vimrc/plug.vim
+- Main basic File: ~/.vim/vimrc/basic.vim
+- Main bind-key File: ~/.vim/vimrc/bindkey.vim
+- Main plugin config File: ~/.vim/vimrc/config.vim
+
+suggest config some alias in ~/.bash_alias to open these vimrc directly:
+```
+alias vb='vim ~/.vim/vimrc/basic.vim'
+alias vp='vim ~/.vim/vimrc/plug.vim'
+alias vc='vim ~/.vim/vimrc/config.vim'
+alias vk='vim ~/.vim/vimrc/bindkey.vim'
+```
+### Some-key-plug:
+Golang code and debug:
+- [vim-go](https://github.com/fatih/vim-go) Golang debug key plug.
+- [NeovimGdb](https://github.com/leafji/NeovimGdb) Using dlv to debug binary or gofile in same plane.
+- [tagbar](https://github.com/majutsushi/tagbar) It will generate taglist in right with golang.
+
+Clang code and debug:
+- [lldb](https://github.com/dbgx/lldb.nvim) Mac lldb used for debug clang.
+
+Code read and tags search:
+- [fzf](https://github.com/junegunn/fzf) Used for search files and tags.
+- [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags) It can auto generate and update tags.
+- [NerdTree](https://github.com/scrooloose/nerdtree)  File read in tree buffer.
+- [ag](https://github.com/rking/ag.vim) Search keyword in path.
+- [interestingwords](https://github.com/lfv89/vim-interestingwords)  insterestingwords show highlight in special colors.
+
+Ui better:
+- [vim-airline]()
+- [vim-airline-theme]()
+- [fatih/molokai]()
+- [mhinz/vim-startify]()
+
+
+### Bind-key
+num|bind-key|action
+-|-|-
+1|F2| open nerdtree
+2|,ct| generate ctags
+3|,tl| open Taglist
+4|,vr| open vimrc in newtab
+5|C-n| switch to next tab
+6|C-p| switch to prev tab
+7|F3|  ag search
+8|c-f|  search files in current path
+9|,b|  search buffer
+10|c-s| symbol search
+11|,tg | open tagbar
+12|,mr | open mru
+13|,cc | direct compile
+14|,gs | git status
+15|,gt | git commit
+16|,gd | git diff split win
+17|,gb | git blame
+18|,q | quit current tab
+19|F5 | dlv debug binary
+20|F6 | dlv debug file
+21|c-g | youdao dic search current word
+
+
+
+
+
+
+
 
