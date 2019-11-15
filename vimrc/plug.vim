@@ -43,7 +43,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'rhysd/vim-goyacc'
-Plug 'ludovicchabant/vim-gutentags'
+"Plug 'ludovicchabant/vim-gutentags'
 Plug 'wannesm/wmgraphviz.vim'
 Plug 'tyru/open-browser.vim'
 Plug 'aklt/plantuml-syntax'

@@ -65,7 +65,7 @@ UI better:
 - [fatih/molokai](https://github.com/fatih/molokai) a best golang vim theme
 - [mhinz/vim-startify](https://github.com/mhinz/vim-startify) a better start ui and show some mru files
 - [NerdTreeIcon](https://www.nerdfonts.com/font-downloads) Aurulent Sans Mono
-  ![Nerd icon](icon.png)
+ ![icon](icon.png)
 
 ### Some Bind-key
 num|bind-key|action

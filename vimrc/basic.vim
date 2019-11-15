@@ -5,6 +5,7 @@ filetype on                  " required
 set noswapfile
 set number
 set autoindent
+set mouse=a
 set softtabstop=4    " 设置软制表符的宽度
 set shiftwidth=4     " (自动) 缩进使用的4个空格
 set tabstop=4        " 设置制表符(tab键)的宽度
