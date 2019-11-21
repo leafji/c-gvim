@@ -5,7 +5,6 @@ filetype on                  " required
 set noswapfile
 set number
 set autoindent
-set mouse=a
 set softtabstop=4    " 设置软制表符的宽度
 set shiftwidth=4     " (自动) 缩进使用的4个空格
 set tabstop=4        " 设置制表符(tab键)的宽度
@@ -21,6 +20,7 @@ set showmode         " 命令行显示vim当前模式
 set incsearch        " 输入字符串就显示匹配点
 set enc=utf-8        " 文件编码
 set encoding=UTF-8
+set fileformat=unix
 "set fdm=manual     " 语法高亮折叠
 set cursorline
 set cursorcolumn
@@ -38,7 +38,6 @@ set t_Co=256                    " 开启256颜色之后，colorschema在vim里�
 let g:Powerline_colorscheme='solarized256'  " 状态栏使用了solarized256配色方案
 "set fillchars+=stl:\ ,stlnc:\          " 状态栏如果有\\\\\或^^^^^等符号出现，添加此句再删掉此句就好了
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
 set rtp+=/usr/local/opt/fzf
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file

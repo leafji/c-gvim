@@ -34,4 +34,5 @@ nnoremap <silent> <leader>cd :cd /Users/leafji/MyGo/src/github.com/cockroachdb/c
 vnoremap <silent> <C-G> :<C-u>Ydv<CR>
 nnoremap <silent> <C-G> :<C-u>Ydc<CR>
 noremap <leader>yd :<C-u>Yde<CR>
+noremap <leader>as :tabnew ~/.vim/ascii.md<CR>
 

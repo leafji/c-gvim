@@ -42,7 +42,7 @@ let g:nerdtree_tabs_open_on_console_startup=1
 "set tags=/Users/leafji/pg/postgresql-11.4/src/tags
 "set tags=/Users/leafji/MyGo/src/github.com/cockroachdb/cockroach/c-deps/postgresql/tags
 "set tags=/Users/leafji/.vim/ctags/cpp
-"set tags+=/Users/leafji/MyGo/src/github.com/cockroachdb/cockroach/pkg/tags
+set tags+=/Users/leafji/MyGo/src/github.com/cockroachdb/cockroach/tags
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
     \ 'kinds'     : [
@@ -288,6 +288,7 @@ endif
 let g:gutentags_ctags_extra_args = ['--languages=c,c++,Go','--fields=+niazS', '--extra=+q']
 let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
+let g:gutentags_background_update = 0
 
 " 23----- lldb
 " lldb 配置

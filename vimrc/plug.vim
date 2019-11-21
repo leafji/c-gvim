@@ -54,7 +54,6 @@ Plug 'ianva/vim-youdao-translater'
 Plug 'sstallion/vim-cursorline'
 Plug 'roxma/vim-window-resize-easy'
 Plug 'simeji/winresizer'
-"Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plug 'liuchengxu/graphviz.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
@@ -62,13 +61,8 @@ Plug 'regedarek/neovim-clipboard'
 Plug 'easymotion/vim-easymotion'
 Plug 'mbbill/undotree'
 Plug 'vimlab/split-term.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+Plug 'jiangmiao/auto-pairs'
 "Plug 'dense-analysis/ale'
-"if has('nvim')
-  "Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
-"else
-  "Plug 'Shougo/defx.nvim'
-  "Plug 'roxma/nvim-yarp'
-  "Plug 'roxma/vim-hug-neovim-rpc'
-"endif
 call plug#end()
 
